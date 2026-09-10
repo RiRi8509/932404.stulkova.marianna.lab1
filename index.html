@@ -667,6 +667,56 @@
             </ol>
         </section>
 
+        <section class="contact-section" id="contact">
+            <div class="contact-copy">
+                <h2>Связаться со мной</h2>
+                <p class="lead">
+                    Заполните форму, указав свои контактные данные и сообщение.
+                </p>
+                <p class="form-note" id="form-note">
+                    После отправки я ознакомлюсь с вашим предложением и постараюсь
+                    учесть его при подготовке новых материалов.
+                </p>
+            </div>
+
+            <form class="contact-form" method="get" aria-describedby="form-note">
+                <label for="visitor-name">Имя</label>
+                <input
+                    type="text"
+                    id="visitor-name"
+                    name="name"
+                    placeholder="Как к вам обращаться?"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="visitor-email">Email</label>
+                <input
+                    type="email"
+                    id="visitor-email"
+                    name="email"
+                    placeholder="name@example.com"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="visitor-message">Сообщение</label>
+                <textarea
+                    id="visitor-message"
+                    name="message"
+                    rows="6"
+                    placeholder="Напишите, какой гаджет стоит протестировать"
+                    required
+                ></textarea>
+
+                <button type="submit">Отправить сообщение</button>
+            </form>
+        </section>
     </main>
+
+    <footer class="site-footer container">
+        <p>© 2026 Стулкова Марианна.</p>
+        <p>Лабораторная работа №1 · Основы HTML</p>
+    </footer>
 </body>
 </html>
